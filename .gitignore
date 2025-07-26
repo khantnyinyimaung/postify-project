@@ -1,0 +1,44 @@
+# Java build files
+*.class
+*.jar
+*.war
+*.ear
+
+# Eclipse/IntelliJ IDEA project files
+/.classpath
+/.project
+/.settings/
+/.idea/
+/*.iml
+*.log
+
+# Maven/Gradle build directories
+/target/
+/build/
+/out/
+
+# Tomcat work/temp/log directories
+/tomcat/work/
+/tomcat/temp/
+/tomcat/logs/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Configuration files (optional – if environment-specific)
+/*.env
+*.properties.local
+*.yml.local
+
+# Backup files
+*.bak
+*.swp
+*.swo
+*~
+
+# Local database and credentials (if applicable)
+*.db
+*.sqlite
+*.env
+*.secret
