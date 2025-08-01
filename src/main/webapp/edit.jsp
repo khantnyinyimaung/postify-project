@@ -27,9 +27,10 @@
 					value="${user.email}" required>
 			</div>
 
-			<div class="mb-3" id="passwordToggle">
-				<button type="button" class="btn btn-warning"
-					onclick="togglePasswordFields()">Change Password</button>
+			<div class="mb-3">
+				<input
+					type="hidden" class="form-control" id="password_hash" name="password_hash"
+					value="${user.passwordHash}" required>
 			</div>
 
 			<div class="mb-3">
@@ -39,14 +40,15 @@
 			</div>
 
 			<div class="mb-3">
-				<label for="createdAt" class="form-label">Created At</label> 
-				<input
+				<label for="createdAt" class="form-label">Created At</label> <input
 					type="text" class="form-control" id="createdAt" name="createdAt"
 					value="${user.createdAt}" readonly>
 			</div>
 
 			<button type="submit" class="btn btn-primary">Update User</button>
-			<a href="${pageContext.request.contextPath}/profile?userId=${user.userId}" class="btn btn-secondary">Cancel</a>
+			<a
+				href="${pageContext.request.contextPath}/profile?userId=${user.userId}"
+				class="btn btn-secondary">Cancel</a>
 		</form>
 	</div>
 

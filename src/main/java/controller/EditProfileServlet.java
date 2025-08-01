@@ -44,7 +44,7 @@ public class EditProfileServlet extends HttpServlet {
         long userId = Long.parseLong(request.getParameter("userId"));
         String username = request.getParameter("username");
         String email = request.getParameter("email");
-        String password = request.getParameter("passwordHash");
+        String password = request.getParameter("password_hash");
         String fullName = request.getParameter("fullName");
 
         User user = new User();
